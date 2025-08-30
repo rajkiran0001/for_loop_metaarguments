@@ -1,6 +1,5 @@
-variable "ec2_instances" {
-  description = "A map of instance identifiers to Name tags"
-  type        = map(string)
+variable "ec2_names" {
+  type = list(string)
 }
 
 variable "ami_id" {
